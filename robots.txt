@@ -1,0 +1,19 @@
+# Bachpan Garments - robots.txt
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /schools/
+Allow: /products/
+
+# Protect checkout, customer profile, and internal backend
+Disallow: /admin/
+Disallow: /api/
+Disallow: /invoices/
+Disallow: /checkout.html
+Disallow: /account.html
+Disallow: /database/
+Disallow: /tests/
+Disallow: /bachpan-private/
+
+# Sitemap location
+Sitemap: https://bachpangarments.in/sitemap.xml

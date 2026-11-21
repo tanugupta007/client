@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ7L3PCD');</script>
+  <!-- End Google Tag Manager -->
+<meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/bachpan-garments-logo.png">
+  <meta name="description" content="Review your Bachpan Garments uniform order, select delivery address, and pay securely with Razorpay.">
+  <title>Your Cart & Checkout | Bachpan Garments</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/checkout-upgrade.css?v=20261103-upg">
+  <script src="assets/js/seo-analytics.js" defer></script>
+</head>
+<body class="bg-checkout-body font-body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ7L3PCD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="bg-checkout-container" data-checkout>
+    <!-- Header -->
+    <header class="bg-checkout-header">
+      <div class="bg-checkout-header-left">
+        <a href="index.html" class="bg-brand-mark" aria-label="Bachpan Garments home">
+          <img src="assets/images/bachpan-garments-logo.png" alt="Bachpan Garments" width="48" height="48" loading="eager" />
+        </a>
+
+        <div class="bg-brand-text-block">
+          <a class="bg-back-btn" href="shop-by-school.html" aria-label="Back to shopping">
+            <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span data-i18n="nav.continueShopping">Continue shopping</span>
+          </a>
+          <h1 class="bg-checkout-title">
+            <span data-i18n="cart.heading">Your Cart</span>
+            <span class="bg-checkout-count-badge" data-cart-count-badge>(0 items)</span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="bg-header-actions">
+        <span class="bg-brand-tag">Secure Checkout</span>
+        <a href="account.html" class="bg-user-badge text-inherit no-underline cursor-pointer" aria-label="Profile" data-i18n-aria-label="nav.profile">
+            <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span data-header-account-label data-i18n="nav.profile">Profile</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Dynamic Checkout Content -->
+    <div data-checkout-content aria-live="polite">
+      <div class="bg-empty-cart">
+        <p class="text-on-surface-secondary">Loading your cart…</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Bottom Checkout Bar -->
+  <aside class="bg-sticky-checkout-bar" data-sticky-bar hidden>
+    <div class="bg-sticky-inner">
+      <div class="bg-sticky-price-block">
+        <span class="bg-sticky-price-label" data-i18n="bill.finalTotal">Total Amount</span>
+        <span class="bg-sticky-price-amount" data-sticky-total>₹0</span>
+      </div>
+      <button type="button" class="bg-btn-primary" data-sticky-action-btn>
+        <span data-sticky-btn-text data-i18n="cart.proceedToPay">Proceed to Pay</span>
+        <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+    <!-- ======================================================== -->
+  <!-- MODAL: Password Auth Bottom Sheet                        -->
+  <!-- ======================================================== -->
+  <div class="bg-modal-backdrop" id="auth-modal" data-modal="auth" aria-hidden="true">
+    <div class="bg-bottom-sheet" role="dialog" aria-labelledby="auth-modal-title" style="max-width: 460px; margin: 0 auto;">
+      <div class="bg-modal-header" style="border-bottom: none; padding-bottom: 0.25rem;">
+        <h2 class="bg-modal-title" id="auth-modal-title" style="display:none;">Welcome to Bachpan Garments</h2>
+        <button type="button" class="bg-modal-close" data-modal-close="auth" aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- VIEW 1: Welcome Prompt (Matches Screenshot Reference) -->
+      <div data-auth-view="welcome" class="text-center py-2">
+        <h2 class="text-2xl font-black text-black tracking-tight mb-2">Welcome to Bachpan Garments</h2>
+        <p class="text-sm text-gray-600 mb-6 font-medium">Login or create an account to continue</p>
+
+        <div class="flex flex-col gap-3">
+          <button type="button" class="bg-auth-login-button w-full py-3 px-4 text-white font-bold text-base rounded-full transition cursor-pointer" data-auth-action="show-login">
+            Login
+          </button>
+          <button type="button" class="w-full py-3 px-4 bg-white text-black font-bold text-base rounded-full border-2 border-gray-300 hover:border-black transition cursor-pointer" data-auth-action="show-signup">
+            Create New Account
+          </button>
+          <div class="relative flex py-1 items-center">
+            <div class="flex-grow border-t border-gray-200"></div>
+            <span class="flex-shrink mx-3 text-xs text-gray-400 font-semibold uppercase">Or</span>
+            <div class="flex-grow border-t border-gray-200"></div>
+          </div>
+          <button type="button" class="w-full py-3 px-4 bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold text-base rounded-full transition cursor-pointer flex items-center justify-center gap-2" data-auth-action="guest-checkout">
+            <span>Continue as Guest</span>
+            <span>&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Login Form -->
+      <div data-auth-view="login" hidden>
+        <div class="flex items-center justify-between mb-4">
+          <button type="button" class="text-xs font-bold text-gray-600 hover:text-black flex items-center gap-1 cursor-pointer bg-transparent border-0" data-auth-action="show-welcome">
+            &larr; Back
+          </button>
+          <h3 class="text-lg font-black text-black m-0">Customer Login</h3>
+          <span style="width: 40px;"></span>
+        </div>
+        <form data-login-form class="flex flex-col gap-3">
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Email Address or Mobile Number</span>
+            <input type="text" name="login_identifier" required placeholder="name@example.com or 9876543210" class="bg-input" data-login-identifier autocomplete="username">
+          </label>
+          <label class="bg-field-label">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold text-gray-700">Password</span>
+              <button type="button" class="text-xs text-black underline font-semibold cursor-pointer bg-transparent border-0 p-0" data-auth-action="show-forgot">Forgot Password?</button>
+            </div>
+            <div class="password-input-wrap">
+              <input type="password" name="login_password" required placeholder="Enter password" class="bg-input" data-login-password autocomplete="current-password" style="padding-right: 2.75rem;">
+              <button type="button" class="password-toggle-btn" aria-label="Show password" tabindex="-1">
+    <svg class="eye-open-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+    <svg class="eye-closed-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+  </button>
+            </div>
+          </label>
+          <span class="bg-field-error" data-login-error hidden></span>
+          <button type="submit" class="bg-btn-primary w-full mt-2" data-login-btn>
+            <span>Login</span>
+          </button>
+        </form>
+        <p class="text-xs text-center text-gray-600 mt-4">
+          Don't have an account? <button type="button" class="text-black font-bold underline cursor-pointer bg-transparent border-0" data-auth-action="show-signup">Create New Account</button>
+        </p>
+      </div>
+
+      <!-- VIEW 3: Signup Form -->
+      <div data-auth-view="signup" hidden>
+        <div class="flex items-center justify-between mb-4">
+          <button type="button" class="text-xs font-bold text-gray-600 hover:text-black flex items-center gap-1 cursor-pointer bg-transparent border-0" data-auth-action="show-welcome">
+            &larr; Back
+          </button>
+          <h3 class="text-lg font-black text-black m-0">Create New Account</h3>
+          <span style="width: 40px;"></span>
+        </div>
+        <form data-signup-form class="flex flex-col gap-3">
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Full Name</span>
+            <input type="text" name="signup_name" required placeholder="e.g. Rahul Sharma" class="bg-input" data-signup-name autocomplete="name">
+          </label>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Email Address</span>
+            <input type="email" name="signup_email" required placeholder="name@example.com" class="bg-input" data-signup-email autocomplete="email">
+          </label>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Mobile Number</span>
+            <div class="flex">
+              <span class="inline-flex items-center px-3 bg-gray-100 border border-r-0 border-gray-300 rounded-l-md font-bold text-xs text-gray-700">+91</span>
+              <input type="tel" name="signup_phone" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="9876543210" class="bg-input rounded-l-none" data-signup-phone autocomplete="tel">
+            </div>
+          </label>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Password (min 6 characters)</span>
+            <div class="password-input-wrap">
+              <input type="password" name="signup_password" minlength="6" required placeholder="Create a secure password" class="bg-input" data-signup-password autocomplete="new-password" style="padding-right: 2.75rem;">
+              <button type="button" class="password-toggle-btn" aria-label="Show password" tabindex="-1">
+    <svg class="eye-open-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+    <svg class="eye-closed-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+  </button>
+            </div>
+          </label>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Confirm Password</span>
+            <div class="password-input-wrap">
+              <input type="password" name="signup_confirm_password" minlength="6" required placeholder="Re-enter password" class="bg-input" data-signup-confirm autocomplete="new-password" style="padding-right: 2.75rem;">
+              <button type="button" class="password-toggle-btn" aria-label="Show password" tabindex="-1">
+    <svg class="eye-open-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+    <svg class="eye-closed-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+  </button>
+            </div>
+          </label>
+          <span class="bg-field-error" data-signup-error hidden></span>
+          <button type="submit" class="bg-btn-primary w-full mt-2" data-signup-btn>
+            <span>Create Account</span>
+          </button>
+        </form>
+        <p class="text-xs text-center text-gray-600 mt-4">
+          Already have an account? <button type="button" class="text-black font-bold underline cursor-pointer bg-transparent border-0" data-auth-action="show-login">Login</button>
+        </p>
+      </div>
+
+      <!-- VIEW 4: Forgot Password Form -->
+      <div data-auth-view="forgot" hidden>
+        <div class="flex items-center justify-between mb-4">
+          <button type="button" class="text-xs font-bold text-gray-600 hover:text-black flex items-center gap-1 cursor-pointer bg-transparent border-0" data-auth-action="show-login">
+            &larr; Back to Login
+          </button>
+          <h3 class="text-lg font-black text-black m-0">Reset Password</h3>
+          <span style="width: 40px;"></span>
+        </div>
+        <form data-forgot-form class="flex flex-col gap-3">
+          <p class="text-xs text-gray-600 m-0">Enter your registered email address or mobile number along with your new password.</p>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Email Address or Mobile Number</span>
+            <input type="text" name="forgot_identifier" required placeholder="name@example.com or 9876543210" class="bg-input" data-forgot-identifier>
+          </label>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">New Password (min 6 characters)</span>
+            <input type="password" name="forgot_new_password" minlength="6" required placeholder="Enter new password" class="bg-input" data-forgot-password>
+          </label>
+          <label class="bg-field-label">
+            <span class="text-xs font-bold text-gray-700">Confirm New Password</span>
+            <input type="password" name="forgot_confirm_password" minlength="6" required placeholder="Re-enter new password" class="bg-input" data-forgot-confirm>
+          </label>
+          <span class="bg-field-error" data-forgot-error hidden></span>
+          <div class="text-xs text-green-700 font-semibold p-2 bg-green-50 rounded" data-forgot-success hidden></div>
+          <button type="submit" class="bg-btn-primary w-full mt-2" data-forgot-btn>
+            <span>Update Password</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: Delivery Address Form Modal (Reference Match)     -->
+  <!-- ======================================================== -->
+  <div class="bg-modal-backdrop" id="address-modal" data-modal="address" aria-hidden="true">
+    <div class="bg-bottom-sheet" role="dialog" aria-labelledby="address-modal-title">
+      <button type="button" class="bg-modal-close-circle" data-modal-close="address" aria-label="Close modal">✕</button>
+      <div class="bg-modal-header" style="border-bottom: none; margin-bottom: 0.75rem; padding-bottom: 0;">
+        <h2 class="bg-modal-title" id="address-modal-title" data-i18n="address.modalTitle" style="font-size: 1.35rem; font-weight: 800; color: #111;">Add Delivery Address</h2>
+      </div>
+
+      <form data-address-form class="bg-form-grid">
+        <input type="hidden" name="id" data-addr-id>
+
+        <!-- 1. First Name -->
+        <label class="bg-field-label">
+          <span data-i18n="address.firstName">First Name</span>
+          <input type="text" name="firstName" required maxlength="60" autocomplete="given-name" class="bg-input" data-addr-firstname data-i18n-placeholder="address.firstName" placeholder="First Name" style="border-radius: 10px;">
+          <span class="bg-field-error" data-error-firstname hidden></span>
+        </label>
+
+        <!-- 2. Last Name -->
+        <label class="bg-field-label">
+          <span data-i18n="address.lastName">Last Name</span>
+          <input type="text" name="lastName" required maxlength="60" autocomplete="family-name" class="bg-input" data-addr-lastname data-i18n-placeholder="address.lastName" placeholder="Last Name" style="border-radius: 10px;">
+          <span class="bg-field-error" data-error-lastname hidden></span>
+        </label>
+
+        <!-- 3. House / Flat / Block No. -->
+        <label class="bg-field-label bg-form-full">
+          <span data-i18n="address.house">House No. / Flat No. / Block No.</span>
+          <input type="text" name="houseFlatBlock" required maxlength="120" data-i18n-placeholder="address.house" placeholder="House No. / Flat No. / Block No." class="bg-input" data-addr-house style="border-radius: 10px;">
+          <span class="bg-field-error" data-error-house hidden></span>
+        </label>
+
+        <!-- 4. Full Address -->
+        <label class="bg-field-label bg-form-full">
+          <span data-i18n="address.fullAddress">Full Address (Street, Area, Landmark)</span>
+          <input type="text" name="fullAddress" required maxlength="255" data-i18n-placeholder="address.fullAddress" placeholder="Full Address (Street, Area, Landmark)" class="bg-input" data-addr-fulladdress style="border-radius: 10px;">
+          <span class="bg-field-error" data-error-fulladdress hidden></span>
+        </label>
+
+        <!-- 5. PIN Code -->
+        <label class="bg-field-label bg-form-full">
+          <span data-i18n="address.pincode">PIN Code</span>
+          <input type="tel" inputmode="numeric" pattern="[1-9][0-9]{5}" maxlength="6" data-i18n-placeholder="address.pincode" placeholder="PIN Code" required class="bg-input" data-addr-pincode style="border-radius: 10px;">
+          <span class="bg-field-error" data-error-pincode hidden></span>
+        </label>
+
+        <!-- 6. City -->
+        <label class="bg-field-label">
+          <span data-i18n="address.city">City</span>
+          <input type="text" name="city" required maxlength="100" data-i18n-placeholder="address.city" placeholder="City" class="bg-input" data-addr-city style="border-radius: 10px;">
+          <span class="bg-field-error" data-error-city hidden></span>
+        </label>
+
+        <!-- 7. State -->
+        <label class="bg-field-label bg-form-full">
+          <span data-i18n="address.state">State</span>
+          <select name="state" required class="bg-select" data-addr-state style="border-radius: 10px;">
+            <option value="" data-i18n="address.statePlaceholder">State</option>
+            <option value="Madhya Pradesh" selected>Madhya Pradesh</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Goa">Goa</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Ladakh">Ladakh</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+          </select>
+          <span class="bg-field-error" data-error-state hidden></span>
+        </label>
+
+        <!-- 8. Primary Mobile Number -->
+        <label class="bg-field-label bg-form-full">
+          <span><span data-i18n="address.primaryPhone">Primary Mobile Number</span> <span class="text-red-500">*</span></span>
+          <div class="flex">
+            <span class="inline-flex items-center px-3.5 bg-gray-100 border border-r-0 border-gray-300 rounded-l-md font-bold text-sm text-gray-700" style="border-radius: 10px 0 0 10px;">+91</span>
+            <input type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="9876543210" required class="bg-input rounded-l-none" data-addr-phone style="border-radius: 0 10px 10px 0;">
+          </div>
+          <span class="bg-field-error" data-error-phone hidden></span>
+        </label>
+
+        <!-- 9. Alternate Mobile Number (OPTIONAL) -->
+        <label class="bg-field-label">
+          <span><span data-i18n="address.alternatePhone">Alternate Mobile Number (Optional)</span></span>
+          <div class="flex">
+            <span class="inline-flex items-center px-2 bg-gray-100 border border-r-0 border-gray-300 rounded-l-md text-xs font-bold text-gray-700">+91</span>
+            <input type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" data-i18n-placeholder="common.optional" placeholder="Optional" class="bg-input rounded-l-none" data-addr-alternatephone>
+          </div>
+        </label>
+
+        <!-- 10. Email Address (OPTIONAL) -->
+        <label class="bg-field-label">
+          <span><span data-i18n="address.email">Email Address (Optional)</span></span>
+          <input type="email" maxlength="254" data-i18n-placeholder="common.optional" placeholder="Optional" autocomplete="email" class="bg-input" data-addr-email>
+        </label>
+
+        <div class="bg-form-full mt-4">
+          <button type="submit" class="bg-btn-save-address" data-save-address-btn>
+            <span data-i18n="address.saveBtn">Save Address</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: Saved Addresses Selection Modal                   -->
+  <!-- ======================================================== -->
+  <div class="bg-modal-backdrop" id="address-list-modal" data-modal="address-list" aria-hidden="true">
+    <div class="bg-bottom-sheet" role="dialog" aria-labelledby="address-list-title">
+      <div class="bg-modal-header">
+        <h2 class="bg-modal-title" id="address-list-title" data-i18n="address.sectionTitle">Delivery Address</h2>
+        <button type="button" class="bg-modal-close" data-modal-close="address-list" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="flex flex-col gap-2" data-saved-addresses-container>
+        <!-- Saved address cards injected by JS -->
+      </div>
+
+      <button type="button" class="bg-btn-select-address mt-3" data-trigger-add-new-address>
+        <span data-i18n="address.addBtn">+ Add New Address</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- (Coupons modal removed — discount system disabled) -->
+
+  <!-- ======================================================== -->
+  <!-- MODAL: Pre-Payment Razorpay Review Screen                -->
+  <!-- ======================================================== -->
+  <div class="bg-modal-backdrop" id="pre-payment-modal" data-modal="payment-review" aria-hidden="true">
+    <div class="bg-bottom-sheet" role="dialog" aria-labelledby="payment-review-title">
+      <div class="bg-modal-header">
+        <h2 class="bg-modal-title" id="payment-review-title" data-i18n="payment.heading">Review & Pay</h2>
+        <button type="button" class="bg-modal-close" data-modal-close="payment-review" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <!-- Delivery Summary -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm">
+          <span class="text-xs font-bold text-gray-500 uppercase tracking-wide" data-i18n="payment.deliveryTo">Delivering to:</span>
+          <p class="font-bold text-black mt-1 mb-0" data-review-name></p>
+          <p class="text-gray-700 m-0 text-xs leading-relaxed" data-review-address></p>
+          <p class="text-gray-700 m-0 text-xs mt-1">Mobile: <strong data-review-phone></strong></p>
+        </div>
+
+        <!-- Items Summary List -->
+        <div class="border border-gray-200 rounded-lg p-3 max-h-48 overflow-y-auto">
+          <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2" data-i18n="payment.summary">Order Summary</p>
+          <ul class="divide-y divide-gray-100 p-0 m-0 list-none text-xs" data-review-items-list></ul>
+        </div>
+
+        <!-- Delivery & Final Amount Breakdown -->
+        <div class="flex flex-col gap-1 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+          <div class="flex justify-between items-center text-xs text-gray-700">
+            <span>Items Subtotal:</span>
+            <span class="font-bold text-black" data-review-subtotal>₹0</span>
+          </div>
+          <div class="flex justify-between items-center text-xs text-gray-700">
+            <span>Delivery Charge:</span>
+            <span class="font-bold" data-review-delivery>₹0</span>
+          </div>
+          <div class="flex justify-between items-center pt-2 border-t border-yellow-200 mt-1">
+            <span class="font-bold text-sm text-black" data-i18n="payment.payable">Amount Payable:</span>
+            <span class="font-black text-xl text-black" data-review-final-amount>₹0</span>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-gray-500 text-center m-0" data-i18n="payment.secureBadge">🔒 100% Secure 256-bit Encrypted Checkout</p>
+        <p class="text-xs text-center text-gray-600 m-0" data-payment-preparation-status role="status" aria-live="polite" hidden></p>
+
+        <div class="flex flex-col gap-2 mt-1">
+          <!-- PhonePe Payment Launch -->
+          <button type="button" class="w-full min-h-[3rem] bg-[#5f259f] hover:bg-[#4d1d82] text-white font-extrabold text-sm rounded-md flex items-center justify-center gap-2 transition shadow-sm cursor-pointer" data-trigger-phonepe-launch>
+            <svg class="size-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-4h2v4zm-2-8a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+            <span>Pay with PhonePe</span>
+          </button>
+
+          <!-- Razorpay Payment Launch -->
+          <button type="button" class="bg-btn-primary w-full" data-trigger-razorpay-launch>
+            <span data-i18n="payment.payBtn">Pay with Razorpay / Cards / Net Banking</span>
+            <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: Before You Proceed to Payment Information Popup    -->
+  <!-- ======================================================== -->
+  <div class="bg-modal-backdrop" id="before-payment-modal" data-modal="before-payment" aria-hidden="true">
+    <div class="bg-bottom-sheet" role="dialog" aria-labelledby="before-payment-title" style="max-width: 480px; margin: 0 auto; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+      <div class="bg-modal-header" style="background: linear-gradient(135deg, #FFFDEB 0%, #FFF9C4 100%); border-bottom: 2px solid #FFEB00; padding: 1.1rem 1.25rem;">
+        <div class="flex items-center gap-2">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #FFEB00; font-size: 1.15rem; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">⚠️</span>
+          <div>
+            <h2 class="bg-modal-title" id="before-payment-title" style="font-size: 1.18rem; font-weight: 900; color: #111; margin: 0; line-height: 1.2;">
+              Before You Proceed to Payment!
+            </h2>
+            <span style="font-size: 0.72rem; font-weight: 700; color: #78350F; text-transform: uppercase; letter-spacing: 0.05em;">Important Order Guidelines</span>
+          </div>
+        </div>
+        <button type="button" class="bg-modal-close" data-modal-close="before-payment" aria-label="Close modal" style="font-size: 1.5rem; line-height: 1; padding: 0.25rem 0.5rem; border-radius: 0.5rem; cursor: pointer;">&times;</button>
+      </div>
+      <div class="flex flex-col gap-2.5 p-4 text-sm" style="background: #ffffff;">
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-amber-50 border border-amber-200" style="box-shadow: 0 1px 3px rgba(245, 158, 11, 0.08);">
+          <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: #FEF3C7; font-size: 1.1rem; flex-shrink: 0;">🔄</span>
+          <p class="m-0 text-gray-900 leading-snug" style="font-size: 0.88rem;"><strong>Only one time exchange is allowed per order.</strong></p>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-emerald-50 border border-emerald-200" style="box-shadow: 0 1px 3px rgba(16, 185, 129, 0.08);">
+          <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: #D1FAE5; font-size: 1.1rem; flex-shrink: 0;">🚚</span>
+          <p class="m-0 text-gray-900 leading-snug" style="font-size: 0.88rem;">Delivery usually takes <strong>1–2 days</strong>.</p>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-blue-50 border border-blue-200" style="box-shadow: 0 1px 3px rgba(59, 130, 246, 0.08);">
+          <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: #DBEAFE; font-size: 1.1rem; flex-shrink: 0;">🔍</span>
+          <p class="m-0 text-gray-900 leading-snug" style="font-size: 0.88rem;">Please carefully check your <strong>selected products and sizes</strong> before payment.</p>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-purple-50 border border-purple-200" style="box-shadow: 0 1px 3px rgba(147, 51, 234, 0.08);">
+          <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: #F3E8FF; font-size: 1.1rem; flex-shrink: 0;">📍</span>
+          <p class="m-0 text-gray-900 leading-snug" style="font-size: 0.88rem;">Make sure your <strong>delivery details</strong> and mobile number are correct.</p>
+        </div>
+
+        <div class="text-center pt-2 mt-1">
+          <p class="text-xs font-semibold text-gray-500 m-0 mb-3 flex items-center justify-center gap-1.5">
+            <span>✨</span>
+            <span>Thank you for shopping with Bachpan Garments!</span>
+          </p>
+          <button type="button" class="bg-btn-primary w-full py-3.5 px-6 font-bold text-base rounded-xl transition duration-200 hover:shadow-lg hover:brightness-105 active:scale-[0.99] cursor-pointer flex items-center justify-center gap-2" style="background: #FFEB00; color: #111; border: 2px solid #111; font-weight: 800;" data-confirm-before-payment-btn>
+            <span>Continue to Payment</span>
+            <span style="font-size: 1.2rem; line-height: 1;">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/i18n.js?v=20261104-account-language" defer></script>
+  <script src="assets/js/cart-core.js?v=20261103-upg" defer></script>
+  <script src="assets/js/checkout.js?v=20261118-payment-notice-flow" defer></script>
+
+</body>
+</html>
